@@ -19,7 +19,14 @@ namespace TestFirstAppGitHub
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("test");
+
+            Message message = new Message("Title", "Descr");
+            ShowMesage("test");
+        }
+
+        private void ShowMesage(string message)
+        {
+            MessageBox.Show(message);
         }
     }
 }
